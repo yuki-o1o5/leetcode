@@ -1,4 +1,4 @@
-//leetcode.com/problems/palindrome-number/
+// https://leetcode.com/problems/palindrome-number/
 
 //Given an integer x, return true if x is a palindrome, and false otherwise.
 
@@ -17,7 +17,12 @@
 // Output: false
 // Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
-https: var isPalindrome = function (x) {
+/**
+ * @param {number} x
+ * @return {boolean}
+ */
+
+var isPalindrome = function (x) {
   let reversedNum = x.toString().split("").reverse().join("");
   if (x == reversedNum) {
     return true;
